@@ -1,0 +1,132 @@
+/* This class can be replaced using options */
+.hover-in {
+    @include transition(.3s ease-out);
+}
+.hover-out {
+    @include transition(.3s ease-out);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+	font-family: 'Raleway', sans-serif;	
+	font-weight: 200;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+p {
+	font-size: 17px;
+}
+
+.intro {
+	text-align: center;
+
+	h1 {
+		margin-top: 90px;
+		margin-bottom: 40px;		
+	}
+}
+
+.work {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    h1 {
+		text-align: center;
+		margin-bottom: 50px;
+    }
+
+    .arrow-down {
+    	margin: auto;
+    }
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+	font-size: 16px;
+}
+
+.navbar {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	@include transition(padding 0.5s);
+}
+
+.intro,
+.work {
+	min-height: 100vh;
+}
+
+.arrow {
+    margin-top: 50px;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+.arrow-container {
+	overflow: hidden;
+	height: auto;
+	width: 100%;
+	text-align: center;
+}
+
+.layer {
+    background-color: rgba(0, 31, 63, 0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.home-img {
+	height: 100vh;
+    background-image: url('../../../images/scenery.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.portfolio-img {
+	margin-bottom: 20px;
+}
+
+.contact {
+	padding-bottom: 50px;
+	padding-top: 50px;
+	background-color: #505050;
+
+	h1 {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	p {
+		text-align: center;
+		word-wrap: break-word;		
+	}
+}
+
+.portfolio-overlay {
+	position: absolute;
+	top: 0;
+    @include transition(opacity .25s ease-in-out);
+    opacity: 0;
+	z-index: 100;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	h2 {
+		font-size: 16px;
+	}
+
+	p {
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,47 @@
+$primary_colour: #0074D9;
+$secondary_colour: #333;
+$tertiary_colour: #ccc;
+
+body {
+	background-color: $secondary_colour;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a,
+.arrow,
+.navbar-default .navbar-brand:hover, 
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle .icon-bar {
+	color: #fff;
+}
+
+.navbar-default {
+	background-color: $primary_colour;
+	border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus {
+	background-color: $primary_colour;
+}
+
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus,
+span.arrow:hover {
+	color: $tertiary_colour;
+}
+
+.portfolio-overlay {
+	background-color: rgba(0, 0, 0, 0.8);
+}

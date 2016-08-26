@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="frenchQuiz">
+  <head>
+    <meta charset="utf-8" />
+    <title>Inoubliable</title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,200,100,300,500' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+    <script src="questions/questions.module.js"></script>
+    <script src="questions/questions.component.js"></script>
+
+    <script src="about/about.module.js"></script>
+    <script src="about/about.component.js"></script>
+
+    <script src="contact/contact.module.js"></script>
+    <script src="contact/contact.component.js"></script>
+
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+
+    <meta name="viewport" content="width=device-width">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/sites/inoubliable/#!/">inoubliable</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/sites/inoubliable/#!/" class="active">Home</a></li>
+            <li><a href="/sites/inoubliable/#!/about">About</a></li>
+            <li><a href="/sites/inoubliable/#!/contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
+    </nav>
+      
+    <div class="container">
+      <div ng-view></div>
+    </div>
+
+  </body>
+</html>

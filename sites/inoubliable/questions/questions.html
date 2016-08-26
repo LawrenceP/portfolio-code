@@ -1,0 +1,48 @@
+<div class="french-container text-center">
+
+	<div class="quiz-area" ng-show="$ctrl.inProgress">
+		<div ng-show="!$ctrl.quizOver">
+			<h2>Question {{ $ctrl.questionNumber + 1 }}/{{ $ctrl.questionsLength }}</h2>
+
+			<p>{{ $ctrl.question.questionStart }} <button type="button" class="btn btn-placeholder">{{ $ctrl.givenAnswer }}</button> {{ $ctrl.question.questionEnd }}</p>
+
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<div class="row">
+						<div class="col-md-4" ng-repeat="possibleAnswer in $ctrl.question.possibleAnswers">
+							<button 
+								type="button" 
+								class="btn btn-answer" 
+								ng-click="$ctrl.setGivenAnswer(possibleAnswer)">
+								{{ possibleAnswer }}
+							</button>		
+						</div>
+					</div>	
+					<button type="button" class="btn btn-submit" ng-click="$ctrl.checkAnswer($ctrl.givenAnswer)">submit</button>			
+				</div>
+			</div>
+		</div>
+		 
+		<div ng-show="$ctrl.quizOver">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<h2>Congratulations!</h2>
+					<p>You scored {{ $ctrl.correctAnswers + ' out of ' + $ctrl.questionsLength }}</p>
+					<p>You are level {{ $ctrl.level }}.</p>
+					<p>Disclaimer: This quiz has no scientific validity. Please consult a real test to know your actual level!</p>
+					<button type="button" class="btn btn-submit" ng-click="$ctrl.start()">Click here to try again</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	 
+	<div class="intro" ng-show="!$ctrl.inProgress">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<h1>Welcome to Inoubliable!</h1>
+				<p>This quiz will determine your level of French based on the <a  target="_blank" href="https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages">Common European Framework of Reference for Languages</a>.</p>
+				<button type="button" class="btn btn-submit" ng-click="$ctrl.start()">Click here to begin</button>	
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,93 @@
+[
+  {
+    "questionStart": "I would like a coffee please = Je",
+    "questionEnd": "un cafe s'il vous plait",
+    "possibleAnswers": [
+      "voudrais",
+      "devenir",
+      "parse que"
+    ] ,
+    "correctAnswer": "voudrais"
+  },
+  {
+    "questionStart": "Hello =",
+    "possibleAnswers": [
+      "bonjour",
+      "au revoir",
+      "content"
+    ],
+    "correctAnswer": "bonjour"
+  },
+  {
+    "questionStart": "Goodbye =",
+    "possibleAnswers": [
+      "merci",
+      "au revoir",
+      "salut"
+    ],
+    "correctAnswer": "au revoir"
+  },
+  {
+    "questionStart": "To swim =",
+    "possibleAnswers": [
+      "nager",
+      "manger",
+      "entendre"
+    ],
+    "correctAnswer": "nager"
+  },
+  {
+    "questionStart": "You have a cat =",
+    "possibleAnswers": [
+      "Tu es un chat",
+      "Tu as un chat",
+      "Tu avez un chat"
+    ],
+    "correctAnswer": "Tu as un chat"
+  },
+  {
+    "questionStart": "Can you help us? =",
+    "possibleAnswers": [
+      "Peux-tu moi aider?",
+      "Peux-tu vous aider?",
+      "Peux-tu nous aider?"
+    ],
+    "correctAnswer": "Peux-tu nous aider?"
+  },
+  {
+    "questionStart": "Unfortunately =",
+    "possibleAnswers": [
+      "Malheureusement",
+      "Mallheureusement",
+      "Malheureussement"
+    ],
+    "correctAnswer": "Malheureusement"
+  },
+  {
+    "questionStart": "ninety-seven =",
+    "possibleAnswers": [
+      "quatre-vingt-dix-sept",
+      "neufsante-dix-sept",
+      "quatre-vingt-dix-huit"
+    ],
+    "correctAnswer": "quatre-vingt-dix-sept"
+  },
+  {
+    "questionStart": "heater =",
+    "possibleAnswers": [
+      "chauffeur",
+      "réchauffeur",
+      "conducteur"
+    ],
+    "correctAnswer": "réchauffeur"
+  },
+  {
+    "questionStart": "keyboard =",
+    "possibleAnswers": [
+      "souris",
+      "toujours",
+      "clavier"
+    ],
+    "correctAnswer": "clavier"
+  }
+]
